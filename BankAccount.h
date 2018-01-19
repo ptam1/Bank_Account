@@ -1,3 +1,8 @@
+/*Pui Tam
+Homework 1
+CS 5040
+*/
+
 #ifndef BANKACCOUNT_H
 #define BANKACCOUNT_H
 
@@ -18,8 +23,10 @@ public:
 	void change_name(std::string name);
 	void deposit(double amount);
 	void withdraw(double amount);
-	string name();
-	double amount();
+	
+	//Acessors
+	void name();
+	double amount() const;
 
 private:
 	double bank_amount;
